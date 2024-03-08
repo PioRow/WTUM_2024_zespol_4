@@ -1,2 +1,2 @@
 # Projekt z Warsztatów z Technik Uczenia Maszynowego
-## zadaniem jest stworzenie aplikacji do rozpoznawania twarzy
+## Celem projektu jest znalezienie kluczowych cech twarzy, dla danego zdjęcia
