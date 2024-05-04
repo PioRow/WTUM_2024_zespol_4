@@ -26,5 +26,6 @@ for (x, y, w, h) in face:
         feat_y = (feat_y+1)*h/2
         middle = (int(feat_x+x),int(feat_y+y))
         cv2.circle(img, middle, 5, color=(0, 0, 255),thickness=1, lineType=cv2.LINE_AA)
-    cv2.imshow('testS', img)
-    cv2.waitKey()
+
+cv2.imshow('testS', img)
+cv2.waitKey()
