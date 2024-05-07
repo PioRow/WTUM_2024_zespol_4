@@ -34,8 +34,17 @@ def predict(mlMmodel,convModel,mode,**kwargs):
             middle = (int(feat_x+x),int(feat_y+y))
             cv2.circle(img, middle, 5, color=(0, 0, 255),thickness=1, lineType=cv2.LINE_AA)
 
-    x,y=min(img.shape[1],1280),min(img.shape[0],720)
-    img=cv2.resize(img,(x,y),interpolation=cv2.INTER_LINEAR)
+    ratio = img.shape[1] / img.shape[0]
+    max_width = 800
+    max_height = 600
+
+    if ratio > 1:
+        width = min(img.shape[1], max_width)
+        height = int(width / ratio)
+    else:
+        height = min(img.shape[0], max_height)
+        width = int(height * ratio)
+    img=cv2.resize(img,(width,height),interpolation=cv2.INTER_LINEAR)
     cv2.imshow('features', img)
     cv2.waitKey()
     cv2.destroyWindow("features")
