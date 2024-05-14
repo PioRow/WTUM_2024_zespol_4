@@ -1,5 +1,3 @@
-torch==2.2.1
-pandas==2.2.1
-numpy==1.26.4
-matplotlib==3.8.4
-opencv-python==4.9.0.80
+version https://git-lfs.github.com/spec/v1
+oid sha256:ed6213719b93abd7a7249b133596ca76420ee89367e823ce738e77bd262c5fff
+size 82
