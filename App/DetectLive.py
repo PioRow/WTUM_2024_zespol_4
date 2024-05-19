@@ -1,19 +1,3 @@
-import cv2
-import torch
-from tkinter import filedialog
-from App.DetectInImage import predict
-
-def live_video_capture(mlpModel,convModel,mode):
-    cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
-    while True:
-        ret, frame = cap.read()
-        cv2.imshow('live camera', frame)
-        if cv2.waitKey(1) == ord('q'):
-            break
-        if cv2.waitKey(30) == 32:
-            predict(mlpModel,convModel,mode,image=frame)
-
-    cap.release()
-    cv2.destroyWindow("live camera")
+version https://git-lfs.github.com/spec/v1
+oid sha256:740c96c2b95e2856886bf7273cbb7472b2e2bc8f0ab8ef5c2616dbe7035a0ab7
+size 591
