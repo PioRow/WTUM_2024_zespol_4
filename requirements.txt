@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6827d48f150f3e8d105f08da5a54e3ecfa3fb800c1cf1a5f958cf25e7e7d44f0
-size 101
+torch==2.2.2
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.8.4
+jupyter_client==8.6.1
+matplotlib==3.8.4
+opencv-python==4.9.0.80
+tensorflow==2.16.1
